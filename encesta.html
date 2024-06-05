@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Animales</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <nav>
+        <div class="navlogo">
+            <img src="WhatsApp Image 2024-06-04 at 6.44.41 PM.jpeg" alt="Logo" class="logotipote">
+            <a href="#" class="encuesta">Encuesta</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Encuesta sobre Animales Vertebrados e Invertebrados</h1>
+        <form id="surveyForm">
+            <div class="question">
+                <h2>1. ¿Cuál es tu animal vertebrado favorito?</h2>
+                <input type="text" name="vertebradoFavorito" required>
+            </div>
+            <div class="question">
+                <h2>2. ¿Cuál es tu animal invertebrado favorito?</h2>
+                <input type="text" name="invertebradoFavorito" required>
+            </div>
+            <div class="question">
+                <h2>3. ¿Cuántas patas tiene un insecto?</h2>
+                <input type="number" name="patasInsecto" required>
+            </div>
+            <div class="question">
+                <h2>4. ¿Cuál es el hábitat principal de los peces?</h2>
+                <input type="text" name="habitatPeces" required>
+            </div>
+            <div class="question">
+                <h2>5. ¿Qué tipo de animal es una araña?</h2>
+                <input type="text" name="tipoArana" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="results" class="hidden">
+            <h2>Resultados de la Encuesta</h2>
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <script src="scriptw.js"></script>
+</body>
+</html>

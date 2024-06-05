@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #059500;
+    border-radius: 50%;
+    animation: loading 2s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(1turn);
+    }
+    to {
+      transform: rotate(2turn);
+    }
+  }
+  
+
+
+.containe1{
+    display: flex;
+    height: 150px;
+    padding: 30px;
+    color: white;
+}
+
+.caja1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20PX;
+    height: 660px;
+    color: white;
+    background-color: #B0EDB0;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-family: mifuente;
+}
+
+
+h1{ 
+    border-left: white 15px solid;
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 45px;
+}
+
+.titulo1{
+    margin-left: 90px;
+    text-align: justify;
+    font-size: 25px;
+    font-family: mifuente;
+}
+
+.texto1{
+    margin-top: 20PX;
+    text-align: justify;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+} 
+
+.video{
+    margin-top: 40px;
+    margin-left: 88PX;
+}
+
+iframe{
+    border-radius: 20px;
+}
+
+@font-face {
+    font-family: "mifuente";
+    src: url('Fuentes/Aller_Std_Bd.ttf') format('truetype');
+    src: url('Fuentes/Aller_Std_Lt.ttf') format('truetype');
+}
+
+/* CAJA DOS */
+
+.container2{
+    width: 55%;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px;
+    margin-left: 20px;
+    height: 340px;
+    background-color: #057C65;
+    border-radius: 20px;
+}
+
+.titulo2{
+    margin-left: 60px;
+    text-align: justify;
+    font-size: 50px;
+    font-family: mifuente;
+}
+
+.img1{
+    width: 250px;
+    height: 245px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
+    border-radius: 20px;
+}
+
+.fila{
+    display: flex;
+}
+
+.uno{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.video2{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+/* CAJA TRES */
+
+.container3{
+    width: 55%;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px;
+    margin-left: 20px;
+    height: 340px;
+    background-color: #057C65;
+    border-radius: 20px;
+}
+
+.titulo3{
+    margin-left: 60px;
+    text-align: justify;
+    font-size: 50px;
+    font-family: mifuente;
+}
+
+.img2{
+    width: 250px;
+    height: 245px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
+    border-radius: 20px;
+}
+
+.fila2{
+    display: flex;
+}
+
+.dos{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.video3{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+/* CAJA CUATR0*/
+
+.container4{
+    width: 55%;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px;
+    margin-left: 20px;
+    height: 340px;
+    background-color: #057C65;
+    border-radius: 20px;
+}
+
+.titulo4{
+    margin-left: 60px;
+    text-align: justify;
+    font-size: 50px;
+    font-family: mifuente;
+}
+
+.img3{
+    width: 250px;
+    height: 245px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
+    border-radius: 20px;
+}
+
+.fila3{
+    display: flex;
+}
+
+.tres{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.video4{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+/* Media Query para hacer responsive */
+@media only screen and (max-width: 600px) {
+    /* Ajustes para el loader */
+    .loader::after {
+        width: 50px;
+        height: 50px;
+        border-width: 10px;
+    }
+
+    /* Ajustes para el contenedor 1 */
+    .caja1 {
+        height: auto;
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .h1 {
+        font-size: 40px;
+        padding-left: 10px;
+    }
+
+    .titulo1 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .texto1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
+    }
+
+    .video {
+        margin-left: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Ajustes para el contenedor 2 */
+    .container, .container2, .container3, .container4 {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .escorpion {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .mariposa {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .escarabajo {
+        font-size: 25px;
+        margin-left: 0;
+    }
+
+    .polilla {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .texto {
+        padding-top: 20px;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    .texto2 {
+        padding-left: 10px;
+        margin-left: 0;
+        font-size: 10px;
+    }
+
+    .video1, .video2, .video3, .video4 {
+        width: 100%;
+        height: auto;
+    }
+}

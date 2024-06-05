@@ -1,0 +1,190 @@
+
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009500;
+    border-radius: 50%;
+    animation: loading 2s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(1turn);
+    }
+    to {
+      transform: rotate(2turn);
+    }
+  }
+  
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    display: flex;
+}
+
+.left-block {
+    width: 20px;
+    height: 40px;
+    background-color: white;
+    margin: 20px;
+    float: left;
+}
+
+.main-content {
+    margin-left: 80px;
+    padding: 20px;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forest-image {
+    border-radius: 100px;
+    margin-right: 20px;
+}
+
+.forest-text {
+    max-width: 600px;
+}
+
+/* Estilos para el subtítulo */
+h2 {
+    color: #4CAF50;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de animales */
+.animals-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lince{
+    height: 30%;
+}
+
+.zorro{
+    height: 30%;
+}
+
+.oso{
+    height: 30%; 
+}
+
+.buo{
+    height: 30%;    
+}
+
+.ardilla{
+    height: 32%; 
+    width:50%;
+}
+
+.lobo{
+    height: 35%;
+    width: 55%;
+}
+
+.animal-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+
+    height: 500px;
+}
+
+.animal-box img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.container2{
+    margin:;
+}
+
+/* Media Query para hacer responsive */
+@media only screen and (max-width: 600px) {
+    /* Ajustes para el loader */
+    .loader::after {
+        width: 50px;
+        height: 50px;
+        border-width: 10px;
+    }
+
+    /* Ajustes para el contenedor 1 */
+    .caja1 {
+        height: auto;
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .h1 {
+        font-size: 40px;
+        padding-left: 10px;
+    }
+
+    .titulo1 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .texto1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
+    }
+
+    .video {
+        margin-left: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+}

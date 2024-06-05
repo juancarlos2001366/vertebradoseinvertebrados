@@ -1,0 +1,373 @@
+@font-face {
+    font-family: "mifuente";
+    src: url('Fuentes/Aller_Std_Bd.ttf') format('truetype');
+    src: url('Fuentes/Aller_Std_Lt.ttf') format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #079637;
+    border-radius: 50%;
+    animation: loading 2s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(1turn);
+    }
+    to {
+      transform: rotate(2turn);
+    }
+  }
+
+
+
+.containe1{
+    display: flex;
+    height: 200px;
+    padding: 30px;
+    color: white;
+}
+
+.caja1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20PX;
+    height: 800px;
+    color: white;
+    background-color: #e5bfa1;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-family: mifuente;
+}
+
+
+.h1{ 
+    border-left: white 15px solid;
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 70px;
+    padding-left: 25px;
+}
+
+.titulo1{
+    margin-left: 90px;
+    text-align: justify;
+    font-size: 30px;
+    font-family: mifuente;
+}
+
+.texto1{
+    margin-top: 20PX;
+    text-align: justify;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+    font-size: 2em;
+} 
+
+.video{
+    margin-top: 40px;
+    margin-left: 88PX;
+}
+
+iframe{
+    border-radius: 20px;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.video{
+    margin-top: 40px;
+    margin-left: 155PX;
+}
+
+iframe{
+    border-radius: 20px;
+} 
+
+/* CAJA DOS */
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 96%;
+    margin-top: 25px;
+    padding: 15px;
+    margin-left: 20px;
+    height: 600px;
+    background-color: #057c65;
+    border-radius: 20px;
+}
+
+.image{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.escorpion{
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 90px;
+    font-family: mifuente;
+    color: white;
+}
+
+.mariposa{
+    margin-left: 45px;
+    text-align: justify;
+    font-size: 50px;
+    font-family: mifuente;
+    color: white;
+}
+
+.escarabajo{
+    margin-left: 50px;
+    text-align: justify;
+    font-size: 70px;
+    font-family: mifuente;
+    color: white;
+}
+
+.polilla{
+    margin-left: 110px;
+    text-align: justify;
+    font-size: 70px;
+    font-family: mifuente;
+    color: white;
+}
+
+
+.texto{
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: mifuente;
+    color: white;
+}
+
+.texto2{
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 10px;
+    font-family: mifuente;
+    color: white;
+}
+
+.text{
+    flex-grow: 1;
+    padding-top: 60px;
+    margin-right: 20px;
+    font-size: 30px;
+    text-align: justify;
+    font-family: mifuente;
+    color: white;
+}
+
+.video1{
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 300%;
+    height: 60%;
+}
+
+.video2{
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 170%;
+    height: 70%;
+}
+
+.video3{
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 130%;
+    height: 300px;
+}
+
+.video4{
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 130%;
+    height: 300px;
+}
+
+
+/* caja tres */
+
+.container2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 96%;
+    margin-top: 25px;
+    padding: 15px;
+    margin-left: 20px;
+    height: 700px;
+    background-color: #c1d7b0;
+    border-radius: 20px;
+}
+
+.container3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 96%;
+    margin-top: 25px;
+    padding: 15px;
+    margin-left: 20px;
+    height: 600px;
+    background-color: #c3ce92;
+    border-radius: 20px;
+}
+p{
+    font-size: 20px;
+}
+
+.container4{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 96%;
+    margin-top: 25px;
+    padding: 15px;
+    margin-left: 20px;
+    height: 600px;
+    background-color: #fca78a;
+    border-radius: 20px;
+}
+
+/* Media Query para hacer responsive */
+@media only screen and (max-width: 600px) {
+    /* Ajustes para el loader */
+    .loader::after {
+        width: 50px;
+        height: 50px;
+        border-width: 10px;
+    }
+
+    /* Ajustes para el contenedor 1 */
+    .caja1 {
+        height: auto;
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .h1 {
+        font-size: 40px;
+        padding-left: 10px;
+    }
+
+    .titulo1 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .texto1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
+    }
+
+    .video {
+        margin-left: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Ajustes para el contenedor 2 */
+    .container, .container2, .container3, .container4 {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .escorpion {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .mariposa {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .escarabajo {
+        font-size: 25px;
+        margin-left: 0;
+    }
+
+    .polilla {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .texto {
+        padding-top: 20px;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    .texto2 {
+        padding-left: 10px;
+        margin-left: 0;
+        font-size: 10px;
+    }
+
+    .video1, .video2, .video3, .video4 {
+        width: 100%;
+        height: auto;
+    }
+}
